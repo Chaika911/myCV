@@ -86,7 +86,7 @@ body {
 @media (max-width:970px){
 	.container{max-width: 550px;}
 }
-@media (max-width:414px){
+@media (max-wi950:414px){
 	.container{max-width: 100%;}
 }
 
@@ -108,7 +108,7 @@ body {
 	border: 1px solid var(--border-dark);
 	box-shadow: 5px 7px 12px rgba(0,0,0, .25), -5px -7px 12px rgba(255,255,255, .1), 1.5px 1px 2px rgba(255,255,255, .1), 0 -2px 2px rgba(0, 0, 0, .13) inset, 0 1px 2px rgba(0,0,0, .25) inset;
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.avatar__bg{
 		width: 165px;
 		height: 165px;
@@ -125,7 +125,7 @@ body {
 
 }
 
-@media (max-width:414px){
+@media (max-width:950px){
 	.avatar{
 		width: 150px;
 		height: 150px;
@@ -139,7 +139,7 @@ body {
 		max-width: 67%;
 	}
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.header_content{
 		margin-left: 20px;
 		width: 50%;
@@ -159,7 +159,7 @@ body {
 		font-size: 25px;
 	}
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.preview{
 		width: 100%;
 	}
@@ -175,7 +175,7 @@ body {
 	color: #F2F2F2;
 	margin-bottom: 50px;
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.name{
 	margin-bottom: 15px;
 
@@ -202,7 +202,7 @@ body {
 		font-size: 25px;
 	}
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.prof{
 		line-height: 28px;
 		font-size: 22px;
@@ -229,7 +229,7 @@ body {
 .contacts {
 	visibility: hidden;
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.social{
 		position: absolute;
 		width: 300px;
@@ -264,7 +264,7 @@ body {
 	border-radius: 10px;
 	transition:  .1s linear;
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.social a{
 		margin-bottom: 10px;
 		font-size: 12px;
@@ -290,7 +290,7 @@ body {
 	font-weight: 200;
 
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.close{
 		visibility: visible;
 
@@ -322,7 +322,7 @@ body {
 	border-radius: 0 0 30px 30px ;
 
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.about{
 		flex-direction: column;
 		padding-top: 70px;
@@ -334,7 +334,7 @@ aside {
 	position: relative;
 	margin-bottom: 30px;
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	aside{
 		width: 100%;
 		float:none;
@@ -351,7 +351,7 @@ aside h3 {
 	top: -50px;
 
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	aside h3{
 		left: 50%;
 		transform: translateX(-50%);
@@ -520,7 +520,7 @@ aside h3 {
 	margin: 0 5px 0 25px;
 	float: right;
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.tecnologi{
 		width: 100%;
 		margin: 0 0 20px 0;
@@ -549,7 +549,7 @@ aside h3 {
 	margin: 0  0 30px 10px;
 
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.tecnologi-item{
 		flex-direction: column;
 		padding: 20px;
@@ -566,7 +566,7 @@ aside h3 {
 	box-shadow: none;
 	background: none;
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.courses{
 		margin-left: 20px;
 	}
@@ -589,7 +589,7 @@ aside h3 {
 	background-clip: text;
 	text-emphasis-color: transparent;
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.name-cbs{
 		font-size: 22px;
 		margin-top: 20px;
@@ -600,7 +600,7 @@ aside h3 {
 	font-weight: 500;
 	font-size: 22px;
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.name-cbs{
 		font-size: 20px;
 
@@ -623,7 +623,7 @@ aside h3 {
 	margin-left: 15px;
 
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.tecnologi-logo{
 		margin: 0 0 20px 0;
 	}
@@ -672,7 +672,7 @@ aside h3 {
 	width: 45%;
 	padding: 0 20px;
 }
-@media (max-width:414px){
+@media (max-width:950px){
 	.tecnologi-text{
 		width: 100%;
 		margin-top: 20px;
