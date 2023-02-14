@@ -671,6 +671,8 @@ aside h3 {
 .tecnologi-text {
 	width: 45%;
 	padding: 0 20px;
+	font-size: 18px;
+    line-height: 1.15;
 }
 @media (max-width:950px){
 	.tecnologi-text{
