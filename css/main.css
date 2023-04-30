@@ -62,6 +62,10 @@
 
 }
 
+.carousel-item img{
+	border-radius: 30px;
+	height: 280px;
+}
 
 
 body {
@@ -222,9 +226,14 @@ body {
 }
 @media (max-width:1440px){
 	.social{
-		position: relative;
+		/* position: relative; */
 		left: -100px;
+		flex-wrap: wrap;
+    	justify-content: space-around;
 	}
+}
+.social a {
+	margin-bottom: 10px;
 }
 .contacts {
 	visibility: hidden;
@@ -528,8 +537,9 @@ aside h3 {
 	}
 }
 .tecnologi ul {
+	margin-top: 80px;
 	margin-bottom: 200px;
-	min-height: 70%;
+	/* min-height: 70%; */
 	width: 100%;
 }
 
