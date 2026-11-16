@@ -629,7 +629,8 @@ body.white .slider__btn:hover {
 	display: flex;
 	justify-content: center;
 	gap: 8px;
-	margin-top: 12px;
+	padding: 6px 0 4px;
+	margin-top: 6px;
 }
 .slider__dot {
 	width: 10px;
