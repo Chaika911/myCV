@@ -492,11 +492,24 @@ body.white .btn-color {
 	font-size: 20px;
 	font-weight: 700;
 }
-.job__title span {
+.job__company {
+	text-decoration: none;
 	background: var(--accent);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
+}
+a.job__company {
+	background-size: 100% 100%;
+	transition: opacity .35s ease;
+}
+a.job__company::after {
+	content: '↗';
+	font-size: 14px;
+	margin-left: 3px;
+}
+a.job__company:hover {
+	opacity: .75;
 }
 .job__date {
 	font-size: 14px;
