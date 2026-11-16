@@ -2,397 +2,235 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="description" content="Vitalii Chaika — Web / Frontend Developer, Kajabi specialist. 50+ Kajabi projects since 2024.">
+    <title>Vitalii Chaika — Web / Frontend Developer</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-   <header>
-        <div class="container header">
-            <div class="avatar__bg">
-                <img src="./img/IMG_20190911_125048.jpg" alt="avatar" class="avatar">
-            </div>
-            <div class="header_content">
-                <div class="preview">
-                    <h2 class="name">Vitalii Chaika</h2>
-                    <h1 class="prof">FrontEnd Developer (React)</h1>
-                    <p class="from">Ukraine, Kyiv</p>
-                </div>
-                <button id="contacts" class="certificate contacts">Contacts</button>
-                <div id="social" class="social">
-                    <span class="close" id="close">&times;</span>
-                    <a href="tel:+380990336434" target="_blank" class="tel" title="Подзвонити">+380990336434</a>
-                    <a href="skype:live:.cid.d3275e58249d4869?userinfo" target="_blank" class="skype">Skype</a>
-                    <a href="https://t.me/vitaliiChaika" target="_blank" class="telegram">Telegram</a>
-                    <a href="https://www.linkedin.com/in/vitalii-chaika-605288243/" target="_blank" class="linkedin">Linkedin</a>
-                </div>
-            </div>
+    <header class="container header">
+        <div class="avatar__bg">
+            <img src="./img/avatar.jpg" alt="Vitalii Chaika" class="avatar">
         </div>
-   </header>
 
+        <div class="header__content">
+            <h1 class="name">Vitalii Chaika</h1>
+            <p class="prof">Web / Frontend Developer</p>
+            <p class="from">Kajabi specialist · Kyiv, Ukraine · Remote</p>
 
-   <main>
-        <div class="container about">
-            <aside>
-                <h3>About me</h3>
-                <p class="about__description">
-                    Highly motivated person who is looking for an opportunity to apply his knowledge and practical skills in Frontend development. From January 2022, I started learning and practicing HTML & CSS and JavaScript on my own, and from October 2022 to May 2023, I successfully completed training at the CyberBionik Systematics school as a Frontend Developer (REACT).
-                      I have excellent communication skills, attentiveness, code quality and responsibility, able to work in a team, goal-oriented, result-oriented.
-                </p>
+            <button id="contacts" class="link-btn contacts" type="button">Contacts</button>
+            <nav id="social" class="social">
+                <button id="close" class="close" type="button" aria-label="Close">&times;</button>
+                <a href="tel:+380990336434" class="social__link tel">+380990336434</a>
+                <a href="mailto:chayka1316@gmail.com" class="social__link email">Email</a>
+                <a href="https://t.me/vitaliiChaika" target="_blank" rel="noopener" class="social__link telegram">Telegram</a>
+                <a href="https://www.linkedin.com/in/vitalii-chaika-605288243/" target="_blank" rel="noopener" class="social__link linkedin">LinkedIn</a>
+                <a href="https://github.com/Chaika911" target="_blank" rel="noopener" class="social__link github">GitHub</a>
+            </nav>
+        </div>
+    </header>
 
+    <main class="container about">
+        <aside class="sidebar">
+            <h2 class="section-title">About me</h2>
+            <div class="about__description">
+                <p>I build and grow Kajabi websites for online schools, coaches and course creators — from a Figma design to a working sales funnel. I combine frontend skills with deep platform knowledge: custom Liquid blocks, email funnels, and migrations from WordPress. I use AI every day, working with Kajabi through Claude and the MCP connector to speed up routine tasks and quality checks.</p>
+                <p>Before IT, I spent four years leading a team of sales representatives at Carlsberg Ukraine. That experience taught me to organize both a team's work and my own: set priorities, meet deadlines, and see tasks through to completion on my own.</p>
+                <a href="./CV/Vitalii_Chaika_CV_UA.pdf" target="_blank" class="link-btn cv-link">Download CV (UA)</a>
+            </div>
 
+            <!-- theme -->
+            <div class="btns">
+                <div class="btn-bg">
+                    <button id="dark" class="btn-color" type="button">dark</button>
+                </div>
+                <div class="btn-bg">
+                    <button id="white" class="btn-color" type="button">white</button>
+                </div>
+            </div>
 
-                <!-- btns -->
+            <!-- skills -->
+            <h3 class="skills-title">skills</h3>
+            <ul class="skills-menu">
+                <li class="skills-item">
+                    <span class="skill-name">Communication</span>
+                    <div class="circles" data-level="5"></div>
+                </li>
+                <li class="skills-item">
+                    <span class="skill-name">Stress tolerance</span>
+                    <div class="circles" data-level="5"></div>
+                </li>
+                <li class="skills-item">
+                    <span class="skill-name">Purposefulness</span>
+                    <div class="circles" data-level="5"></div>
+                </li>
+                <li class="skills-item">
+                    <span class="skill-name">Creativity</span>
+                    <div class="circles" data-level="5"></div>
+                </li>
+            </ul>
 
+            <!-- software -->
+            <h3 class="skills-title software">software</h3>
+            <ul class="skills-menu">
+                <li class="skills-item">
+                    <span class="skill-name software-logo figma">Figma</span>
+                    <div class="circles circles--yellow" data-level="5"></div>
+                </li>
+                <li class="skills-item">
+                    <span class="skill-name software-logo vscode">VS Code</span>
+                    <div class="circles circles--yellow" data-level="5"></div>
+                </li>
+                <li class="skills-item">
+                    <span class="skill-name software-logo canva">Canva</span>
+                    <div class="circles circles--yellow" data-level="5"></div>
+                </li>
+                <li class="skills-item">
+                    <span class="skill-name software-logo photoshop">Photoshop</span>
+                    <div class="circles circles--yellow" data-level="4"></div>
+                </li>
+            </ul>
+        </aside>
 
-                <div class="btns">
-                    <div class="btn-bg">
-                        <button id="dark" class="btn-color">dark</button>
+        <div class="content">
+            <!-- experience -->
+            <section class="experience">
+                <h2 class="section-title">Experience</h2>
+
+                <article class="job">
+                    <div class="job__head">
+                        <h3 class="job__title">Web Developer · <span>Inweba</span></h3>
+                        <span class="job__date">01/2024 — present</span>
                     </div>
-                    <div class="btn-bg">
-                        <button id="white" class="btn-color">white</button>
+                    <p class="job__sub">Remote · web studio specializing in Kajabi</p>
+                    <ul class="job__list">
+                        <li><b>50+ projects</b> for English-speaking clients: online schools, coaches, health and therapy professionals, course creators</li>
+                        <li><b>Landing and sales pages</b> built from Figma designs, from layout to launch</li>
+                        <li><b>Code-level work:</b> custom Liquid blocks editable from the admin panel, sections, header and footer, CSS and JavaScript, checkout scripts</li>
+                        <li><b>Migrations</b> from WordPress to Kajabi and between Kajabi accounts — pages, offers, branding, automations, contacts</li>
+                        <li><b>Sales and funnels:</b> courses, offers, checkout, automations, email funnels</li>
+                        <li><b>Course video:</b> compression in HandBrake, secure hosting with VdoCipher</li>
+                        <li><b>AI in daily work:</b> Claude with the Kajabi MCP connector, AI-assisted review of finished work</li>
+                    </ul>
+                </article>
+
+                <article class="job">
+                    <div class="job__head">
+                        <h3 class="job__title">Supervisor · <span>Carlsberg Ukraine</span></h3>
+                        <span class="job__date">09/2017 — 12/2021</span>
                     </div>
+                    <p class="job__sub">Kharkiv</p>
+                    <ul class="job__list">
+                        <li>Led a team of 5 sales representatives</li>
+                        <li>Managed a large retail network account: performance tracking, metrics analysis, reporting, promotions</li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- certificates -->
+            <section class="certificates">
+                <h2 class="section-title">Certificates</h2>
+
+                <div class="slider" id="slider">
+                    <div class="slider__track">
+                        <img class="slider__item" src="./img/html_css_starter.png" alt="HTML&amp;CSS certificate">
+                        <img class="slider__item" src="./img/JS_starter.png" alt="JavaScript Starter certificate">
+                        <img class="slider__item" src="./img/git.png" alt="Git Basics certificate">
+                        <img class="slider__item" src="./img/JS_essential.png" alt="JavaScript Essential certificate">
+                        <img class="slider__item" src="./img/html_css_advanced.png" alt="HTML&amp;CSS Advanced certificate">
+                        <img class="slider__item" src="./img/React.png" alt="React certificate">
+                    </div>
+                    <button class="slider__btn slider__btn--prev" type="button" aria-label="Previous">&#8249;</button>
+                    <button class="slider__btn slider__btn--next" type="button" aria-label="Next">&#8250;</button>
+                    <div class="slider__dots"></div>
                 </div>
 
-
-                <!-- skills -->
-
-
-                <h4 class="skills-title">skills</h4>
-
-                <ul class="skills-menu">
-                    <li class="skills-item">
-                        <span class="skill-name">Communication</span>
-                        <div class="circles">
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
+                <ul class="tech-list">
+                    <li class="tech-item">
+                        <div class="tech-logo">
+                            <img src="./img/svg/react.png" alt="React logo">
                         </div>
+                        <div class="tech-description">
+                            <h4 class="tech-name">React</h4>
+                            <p class="tech-year">2023</p>
+                            <a href="https://testprovider.com/ru/search-certificate/TP26930280" class="link-btn" target="_blank" rel="noopener">view certificate</a>
+                        </div>
+                        <p class="tech-text">React basics, state and lifecycle, styling, hooks, routing, modal windows, optimization and performance</p>
+                    </li>
+                    <li class="tech-item">
+                        <div class="tech-logo">
+                            <img src="./img/svg/html5css3.png" alt="HTML&amp;CSS logo">
+                        </div>
+                        <div class="tech-description">
+                            <h4 class="tech-name">HTML&amp;CSS Advanced</h4>
+                            <p class="tech-year">2023</p>
+                            <a href="https://testprovider.com/ru/search-certificate/TP84046368" class="link-btn" target="_blank" rel="noopener">view certificate</a>
+                        </div>
+                        <p class="tech-text">Advanced HTML and CSS layout techniques</p>
+                    </li>
+                    <li class="tech-item">
+                        <div class="tech-logo">
+                            <img src="./img/svg/javascript.png" alt="JavaScript logo">
+                        </div>
+                        <div class="tech-description">
+                            <h4 class="tech-name">JavaScript Essential</h4>
+                            <p class="tech-year">2023</p>
+                            <a href="https://testprovider.com/ru/search-certificate/TP43403895" class="link-btn" target="_blank" rel="noopener">view certificate</a>
+                        </div>
+                        <p class="tech-text">DOM, events, classes, inheritance, context, cookies, network requests, asynchronous code</p>
+                    </li>
+                    <li class="tech-item">
+                        <div class="tech-logo">
+                            <img src="./img/svg/git.png" alt="Git logo">
+                        </div>
+                        <div class="tech-description">
+                            <h4 class="tech-name">Git Basics</h4>
+                            <p class="tech-year">2023</p>
+                            <a href="https://testprovider.com/ru/search-certificate/TP92371528" class="link-btn" target="_blank" rel="noopener">view certificate</a>
+                        </div>
+                        <p class="tech-text">Git basics, publishing to a repository, IDE integration</p>
+                    </li>
+                    <li class="tech-item">
+                        <div class="tech-logo">
+                            <img src="./img/svg/js.png" alt="JavaScript logo">
+                        </div>
+                        <div class="tech-description">
+                            <h4 class="tech-name">JavaScript Starter</h4>
+                            <p class="tech-year">2022</p>
+                            <a href="https://testprovider.com/ru/search-certificate/TP03235512" class="link-btn" target="_blank" rel="noopener">view certificate</a>
+                        </div>
+                        <p class="tech-text">JavaScript basics, logical structures, array loops, functions, objects</p>
+                    </li>
+                    <li class="tech-item">
+                        <div class="tech-logo">
+                            <img src="./img/svg/html5css3.png" alt="HTML&amp;CSS logo">
+                        </div>
+                        <div class="tech-description">
+                            <h4 class="tech-name">HTML&amp;CSS</h4>
+                            <p class="tech-year">2022</p>
+                            <a href="https://testprovider.com/ru/search-certificate/TP86710433" class="link-btn" target="_blank" rel="noopener">view certificate</a>
+                        </div>
+                        <p class="tech-text">HTML and CSS basics, Flexbox, semantic layout, forms, element positioning</p>
                     </li>
                 </ul>
+            </section>
 
-                <ul class="skills-menu">
-                    <li class="skills-item">
-                        <span class="skill-name">Stress tolerance</span>
-                        <div class="circles">
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul class="skills-menu">
-                    <li class="skills-item">
-                        <span class="skill-name">Purposefulness</span>
-                        <div class="circles">
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul class="skills-menu">
-                    <li class="skills-item">
-                        <span class="skill-name">Creativity</span>
-                        <div class="circles">
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check"></span>
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-
-
-                <!-- software -->
-                <h4 class="skills-title software">software</h4>
-
-                <ul class="skills-menu">
-                    <li class="skills-item">
-                        <span class="skill-name software-logo figma">Figma</span>
-                        <div class="circles">
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul class="skills-menu">
-                    <li class="skills-item">
-                        <span class="skill-name software-logo vscode">VS Code</span>
-                        <div class="circles">
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul class="skills-menu">
-                    <li class="skills-item">
-                        <span class="skill-name software-logo photoshop">Photoshop</span>
-                        <div class="circles">
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                                <span class="circle-check yellow"></span>
-                            </span>
-                            <span class="circle">
-                            </span>
-                            <span class="circle">
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-
-
-
-
-
-            </aside>
-
-
-
-
-
-             <!-- tecnologi -->
-
-
-            <div class="tecnologi">
-                <!-- carusel -->
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
-                      <div class="carousel-item active justify-content-center">
-                        <img class="d-block mx-auto img-fluid" src="./img/html_css_starter.png" alt="certificate" style="max-width: 100%;">
-                      </div>
-                      <div class="carousel-item justify-content-center">
-                        <img class="d-block mx-auto img-fluid" src="./img/JS_starter.png" alt="certificate" style="max-width: 100%;">
-                      </div>
-                      <div class="carousel-item justify-content-center">
-                        <img class="d-block mx-auto img-fluid" src="./img/git.png" alt="certificate" style="max-width: 100%;">
-                      </div>
-                      <div class="carousel-item justify-content-center">
-                        <img class="d-block mx-auto img-fluid" src="./img/JS_essential.png" alt="certificate" style="max-width: 100%;">
-                      </div>
-                      <div class="carousel-item justify-content-center">
-                        <img class="d-block mx-auto img-fluid" src="./img/html_css_advanced.png" alt="certificate" style="max-width: 100%;">
-                      </div>
-                      <div class="carousel-item justify-content-center">
-                        <img class="d-block mx-auto img-fluid" src="./img/React.png" alt="certificate" style="max-width: 100%;">
-                      </div>
-                      <div class="carousel-item justify-content-center">
-                        <img class="d-block mx-auto img-fluid" src="./img/React.png" alt="certificate" style="max-width: 100%;">
-                      </div>
+            <!-- programming courses -->
+            <section class="courses">
+                <h2 class="section-title">Programming courses</h2>
+                <div class="course">
+                    <img class="course__image" src="./img/cbs.jpg" alt="CyberBionic Systematics logo">
+                    <div class="course__description">
+                        <h4 class="course__name">CyberBionic Systematics</h4>
+                        <p class="course__period">Frontend Developer (React) · 10/2022 — 05/2023</p>
+                        <a href="https://edu.cbsystematics.com/" class="link-btn" target="_blank" rel="noopener">site CBS</a>
                     </div>
-
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-
-
-                <ul>
-                    <li class="tecnologi-item">
-                        <div class="tecnologi-logo">
-                            <img src="./img/svg/html5css3.png" alt="logo html&css">
-                        </div>
-                        <div class="tecnologi-description">
-                            <h6 class="tecnologi-name">HTML&CSS</h6>
-                            <h6 class="tecnologi-year">2022</h6>
-                            <a href="https://testprovider.com/ru/search-certificate/TP86710433" class="certificate" target="_blank">view certificate</a>
-
-                        </div>
-                        <div class="tecnologi-text">
-                            Introduction to HTML, introduction to CSS, Flexbox layout, semantic layout, forms, element positioning
-                        </div>
-                    </li>
-                    <li class="tecnologi-item">
-                        <div class="tecnologi-logo">
-                            <img src="./img/svg/js.png" alt="logo js">
-                        </div>
-                        <div class="tecnologi-description">
-                            <h6 class="tecnologi-name">JAVA SCRIPT STARTER</h6>
-                            <h6 class="tecnologi-year">2022</h6>
-                            <a href="https://testprovider.com/ru/search-certificate/TP03235512" class="certificate" target="_blank">view certificate</a>
-
-                        </div>
-                        <div class="tecnologi-text">
-                            Introduction to JavaScript, logical structures, array loops, functions, objects
-                        </div>
-                    </li>
-                    <li class="tecnologi-item">
-                        <div class="tecnologi-logo">
-                            <img src="./img/svg/git.png" alt="logo git">
-                        </div>
-                        <div class="tecnologi-description">
-                            <h6 class="tecnologi-name">GIT basics</h6>
-                            <h6 class="tecnologi-year">2023</h6>
-
-                            <a href="https://testprovider.com/ru/search-certificate/TP92371528" class="certificate" target="_blank">view certificate</a>
-
-                        </div>
-                        <div class="tecnologi-text">
-                            Git basics, publishing to a repository, IDE integration
-                        </div>
-                    </li>
-                    <li class="tecnologi-item">
-                        <div class="tecnologi-logo">
-                            <img src="./img/svg/javascript.png" alt="logo js">
-                        </div>
-                        <div class="tecnologi-description">
-                            <h6 class="tecnologi-name">JAVA SCRIPT ESSENTIAL</h6>
-                            <h6 class="tecnologi-year">2023</h6>
-                            <a href="https://testprovider.com/ru/search-certificate/TP43403895" class="certificate" target="_blank">view certificate</a>
-
-                        </div>
-                        <div class="tecnologi-text">
-                            Learning DOM, events, classes, inheritance, context, cookies, network requests, asynchronous code
-                        </div>
-                    </li>
-                    <li class="tecnologi-item">
-                        <div class="tecnologi-logo">
-                            <img src="./img/svg/html5css3.png" alt="logo html&css">
-                        </div>
-                        <div class="tecnologi-description">
-                            <h6 class="tecnologi-name">HTML&CSS ADVANCED</h6>
-                            <h6 class="tecnologi-year">2023</h6>
-                            <a href="https://testprovider.com/ru/search-certificate/TP84046368" class="certificate" target="_blank">view certificate</a>
-
-                        </div>
-                        <div class="tecnologi-text">
-                            Introduction to HTML, introduction to CSS, Flexbox layout, semantic layout, forms, element positioning
-                        </div>
-                    </li>
-                    <li class="tecnologi-item">
-                        <div class="tecnologi-logo">
-                            <img src="./img/svg/react.png" alt="logo react">
-                        </div>
-                        <div class="tecnologi-description">
-                            <h6 class="tecnologi-name">REACT</h6>
-                            <h6 class="tecnologi-year">2023</h6>
-
-                            <a href="https://testprovider.com/ru/search-certificate/TP26930280" class="certificate" target="_blank">view certificate</a>
-
-                        </div>
-                        <div class="tecnologi-text">
-                            Introduction to React, React Basics, State and Lifecycle, Styling in React, Hooks, Introduction to Routing, Creating a Modal Window, Optimization and Performance
-                        </div>
-                    </li>
-                </ul>
-
-
-                <!-- programming courses -->
-                <h2 class="courses-title">programming courses</h2>
-                <div class="tecnologi-item courses">
-                    <img class="cbs-image" src="./img/cbs.jpg" alt="logo cbs">
-
-                    <div class="tecnologi-description about-cbs">
-                        <h6 class="tecnologi-name name-cbs">CyberBionic Systematics</h6>
-                        <h6 class="tecnologi-year period">10/2022 - 05/2023</h6>
-
-                    <a href="https://edu.cbsystematics.com/" class="certificate" target="_blank">site CBS</a>
-
-                    </div>
-
                 </div>
-            </div><!--tecnologi-->
-        </div> <!--about-->
-   </main>
+            </section>
+        </div>
+    </main>
 
-   <!-- <script src="./js/script.js" type="module"></script> -->
-   <script src="./js/script.js"></script>
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
