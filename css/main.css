@@ -215,15 +215,6 @@ b {
 	background-position: 15px center;
 	background-size: 20px 20px;
 }
-.social__link:hover {
-	transform: translateY(-2px);
-	color: var(--text);
-	text-decoration: none;
-	box-shadow: 5px 7px 12px rgba(255, 255, 255, .08),
-				-3px -6px 33px rgba(0, 0, 0, .25),
-				0 -6px 38px rgba(116, 179, 181, .12),
-				0 2px 5px rgba(0, 0, 0, .25) inset;
-}
 .tel {
 	--icon: url(../img/svg/telephone-call.png);
 }
