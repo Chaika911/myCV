@@ -75,7 +75,7 @@ body {
 	letter-spacing: .5px;
 	color: var(--text);
 	background: var(--page-bg);
-	padding: 30px 0;
+	padding: 20px 0;
 }
 
 b {
@@ -86,7 +86,7 @@ b {
 	background: var(--container-bg);
 	max-width: 1100px;
 	margin: 0 auto;
-	padding: 0 40px;
+	padding: 0 30px;
 }
 @media (max-width: 1140px) {
 	.container {
@@ -108,7 +108,7 @@ b {
 	font-family: 'Nexa Bold';
 	font-size: 20px;
 	text-transform: uppercase;
-	margin-bottom: 25px;
+	margin-bottom: 18px;
 }
 
 .link-btn {
@@ -125,7 +125,7 @@ b {
 	box-shadow: -5px -7px 12px rgba(255, 255, 255, 0.02),
 				-1px -2px 3px rgba(255, 255, 255, 0.1),
 				4px 4px 8px rgba(0, 0, 0, .45) inset;
-	transition: box-shadow .1s linear;
+	transition: box-shadow .35s ease, transform .35s ease;
 }
 .link-btn:hover {
 	color: var(--text);
@@ -138,9 +138,8 @@ b {
 .header {
 	display: flex;
 	align-items: center;
-	min-height: 300px;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 28px;
+	padding-bottom: 28px;
 	border-bottom: 1px solid var(--line);
 	border-radius: 30px 30px 0 0;
 }
@@ -170,13 +169,13 @@ b {
 
 .header__content {
 	position: relative;
-	margin-left: 40px;
+	margin-left: 35px;
 }
 .name {
 	font-family: 'Nexa Bold';
 	font-size: 24px;
 	letter-spacing: 1.3px;
-	margin-bottom: 25px;
+	margin-bottom: 14px;
 }
 .prof {
 	font-family: 'Nexa Bold';
@@ -187,19 +186,19 @@ b {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 .from {
 	font-size: 18px;
 	font-weight: 500;
 	letter-spacing: 1px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .social {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 15px;
+	gap: 12px;
 }
 .social__link {
 	text-decoration: none;
@@ -213,9 +212,10 @@ b {
 	box-shadow: 5px 7px 12px rgba(0, 0, 0, .25),
 				0 -6px 38px rgba(116, 179, 181, .12),
 				0 2px 5px rgba(255, 255, 255, .25) inset;
-	transition: box-shadow .1s linear;
+	transition: box-shadow .35s ease, transform .35s ease;
 }
 .social__link:hover {
+	transform: translateY(-2px);
 	color: var(--text);
 	text-decoration: none;
 	box-shadow: 5px 7px 12px rgba(255, 255, 255, .08),
@@ -305,9 +305,9 @@ b {
 /* main */
 .about {
 	display: flex;
-	gap: 40px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	gap: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	border-radius: 0 0 30px 30px;
 }
 @media (max-width: 860px) {
@@ -339,7 +339,7 @@ b {
 .btns {
 	display: flex;
 	justify-content: space-around;
-	margin: 45px 0;
+	margin: 28px 0;
 }
 .btn-bg {
 	display: flex;
@@ -350,7 +350,7 @@ b {
 	border-radius: 50%;
 	background: linear-gradient(320.66deg, #005EA3 14.75%, #11A8FD 84.81%);
 	border: 7px solid #0081C9;
-	transition: box-shadow .2s;
+	transition: box-shadow .4s ease, transform .4s ease;
 }
 .btn-color {
 	width: 100px;
@@ -371,6 +371,9 @@ body.white .btn-color {
 				inset -10px -10px 25px rgba(255, 255, 255, 0.7),
 				inset 10px 10px 25px rgba(0, 0, 0, 0.12);
 }
+.btn-bg:hover {
+	transform: scale(1.04);
+}
 .btn-bg:hover,
 .btn-bg--active {
 	box-shadow: 0 0 18px rgba(17, 168, 253, 0.55);
@@ -378,7 +381,7 @@ body.white .btn-color {
 
 /* skills */
 .skills-group + .skills-group {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .skills-title {
 	font-family: 'Nexa Bold';
@@ -388,7 +391,7 @@ body.white .btn-color {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 }
 .skills-title.software {
 	background: linear-gradient(90deg, #E65C00 0%, #F9D423 100%);
@@ -405,8 +408,12 @@ body.white .btn-color {
 	border-radius: 10px;
 	background-color: var(--card-bg);
 	box-shadow: var(--card-shadow);
-	padding: 10px;
-	margin-bottom: 25px;
+	padding: 8px 10px;
+	margin-bottom: 14px;
+	transition: transform .35s ease, box-shadow .35s ease;
+}
+.skills-item:hover {
+	transform: translateX(4px);
 }
 
 .circles {
@@ -461,15 +468,16 @@ body.white .btn-color {
 	min-width: 0;
 }
 .content section + section {
-	margin-top: 60px;
+	margin-top: 35px;
 }
 
 /* experience */
 .job {
 	background-color: var(--tech-bg);
 	border-radius: 25px;
-	padding: 25px 30px;
-	margin-bottom: 25px;
+	padding: 20px 24px;
+	margin-bottom: 18px;
+	transition: transform .35s ease, box-shadow .35s ease;
 	box-shadow: -5px -7px 12px rgba(255, 255, 255, 0.02),
 				4px 4px 8px rgba(0, 0, 0, .25) inset;
 }
@@ -497,12 +505,12 @@ body.white .btn-color {
 .job__sub {
 	font-size: 14px;
 	color: var(--text-muted);
-	margin: 5px 0 15px;
+	margin: 4px 0 12px;
 }
 .job__list li {
 	position: relative;
 	padding-left: 20px;
-	margin-bottom: 8px;
+	margin-bottom: 6px;
 	line-height: 1.4;
 }
 .job__list li::before {
@@ -520,8 +528,7 @@ body.white .btn-color {
 .slider {
 	position: relative;
 	overflow: hidden;
-	border-radius: 30px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 }
 .slider__track {
 	display: flex;
@@ -530,50 +537,77 @@ body.white .btn-color {
 .slider__item {
 	flex: 0 0 100%;
 	width: 100%;
-	height: 330px;
+	height: 300px;
+	border-radius: 30px;
 	object-fit: contain;
 	background: var(--tech-bg);
 }
 .slider__btn {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 40px;
 	height: 40px;
+	padding: 0;
 	border: none;
 	border-radius: 50%;
 	background: rgba(0, 0, 0, .45);
-	color: #fff;
-	font-size: 28px;
-	line-height: 1;
 	cursor: pointer;
+	transform: translateY(-50%);
+	transition: background .35s ease, box-shadow .35s ease, transform .35s ease;
+}
+.slider__btn::before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
 }
 .slider__btn--prev {
 	left: 15px;
 }
+.slider__btn--prev::before {
+	transform: translateX(2px) rotate(-135deg);
+}
 .slider__btn--next {
 	right: 15px;
 }
+.slider__btn--next::before {
+	transform: translateX(-2px) rotate(45deg);
+}
+.slider__btn:hover {
+	background: rgba(17, 168, 253, .85);
+	box-shadow: 0 0 16px rgba(17, 168, 253, .6);
+	transform: translateY(-50%) scale(1.08);
+}
+body.white .slider__btn {
+	background: linear-gradient(320.66deg, #005EA3 14.75%, #11A8FD 84.81%);
+	box-shadow: 0 3px 10px rgba(0, 94, 163, .35);
+}
+body.white .slider__btn:hover {
+	box-shadow: 0 0 18px rgba(17, 168, 253, .7);
+}
 .slider__dots {
-	position: absolute;
-	bottom: 12px;
-	left: 0;
-	right: 0;
 	display: flex;
 	justify-content: center;
 	gap: 8px;
+	margin-top: 12px;
 }
 .slider__dot {
 	width: 10px;
+	transition: background .35s ease, transform .35s ease;
 	height: 10px;
 	padding: 0;
 	border: none;
 	border-radius: 50%;
-	background: rgba(0, 0, 0, .3);
+	background: rgba(127, 127, 127, .45);
 	cursor: pointer;
 }
 .slider__dot--active {
 	background: #11A8FD;
+	transform: scale(1.25);
 }
 @media (max-width: 480px) {
 	.slider__item {
@@ -581,13 +615,26 @@ body.white .btn-color {
 	}
 }
 
+.job:hover,
+.tech-item:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 22px rgba(0, 0, 0, .25),
+				4px 4px 8px rgba(0, 0, 0, .15) inset;
+}
+body.white .job:hover,
+body.white .tech-item:hover {
+	box-shadow: 0 10px 22px rgba(0, 0, 0, .1),
+				4px 4px 8px rgba(0, 0, 0, .05) inset;
+}
+
 /* certificates list */
 .tech-item {
 	display: flex;
 	align-items: center;
-	gap: 25px;
-	padding: 25px;
-	margin-bottom: 25px;
+	gap: 20px;
+	padding: 18px 22px;
+	margin-bottom: 16px;
+	transition: transform .35s ease, box-shadow .35s ease;
 	background-color: var(--tech-bg);
 	border-radius: 25px;
 	box-shadow: -5px -7px 12px rgba(255, 255, 255, 0.02),
@@ -605,10 +652,10 @@ body.white .btn-color {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100px;
-	height: 100px;
+	width: 86px;
+	height: 86px;
 	border-radius: 50%;
-	border: 10px solid var(--tech-logo-border);
+	border: 8px solid var(--tech-logo-border);
 	background: linear-gradient(-45deg, #153ee1 5.15%, #e064d6 89.49%);
 	box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.25),
 				-2px -4px 10px rgba(255, 255, 255, 0.1),
@@ -616,7 +663,7 @@ body.white .btn-color {
 				inset 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 .tech-logo img {
-	width: 55px;
+	width: 46px;
 }
 
 .tech-description {
@@ -627,7 +674,7 @@ body.white .btn-color {
 .tech-year {
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-bottom: 15px;
+	margin-bottom: 8px;
 }
 .tech-text {
 	flex: 1;
@@ -743,7 +790,7 @@ body.white .btn-color {
 	}
 	.btns {
 		gap: 30px;
-		margin: 35px 0;
+		margin: 24px 0;
 	}
 	.btn-bg {
 		width: 96px;
@@ -780,12 +827,12 @@ body.white .btn-color {
 	.tech-text {
 		font-size: 15px;
 	}
-	.slider {
+	.slider__item {
 		border-radius: 20px;
 	}
 	.slider__btn {
+		top: 110px;
 		width: 34px;
 		height: 34px;
-		font-size: 24px;
 	}
 }

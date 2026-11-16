@@ -49,37 +49,67 @@ document.querySelectorAll('.circles').forEach(circles => {
 });
 
 
-// certificates slider
+// certificates slider (infinite)
 const slider = document.querySelector('#slider');
 const track = slider.querySelector('.slider__track');
-const slides = slider.querySelectorAll('.slider__item');
+const slides = [...slider.querySelectorAll('.slider__item')];
 const dotsBox = slider.querySelector('.slider__dots');
-let current = 0;
+const total = slides.length;
+let position = 1;
 let timer;
+let isMoving = false;
+
+track.prepend(slides[total - 1].cloneNode(true));
+track.append(slides[0].cloneNode(true));
 
 slides.forEach((slide, index) => {
     const dot = document.createElement('button');
     dot.className = 'slider__dot';
     dot.type = 'button';
     dot.setAttribute('aria-label', `Slide ${index + 1}`);
-    dot.addEventListener('click', () => goTo(index));
+    dot.addEventListener('click', () => moveTo(index + 1));
     dotsBox.append(dot);
 });
 const dots = dotsBox.querySelectorAll('.slider__dot');
 
-function goTo(index) {
-    current = (index + slides.length) % slides.length;
-    track.style.transform = `translateX(-${current * 100}%)`;
-    dots.forEach((dot, i) => dot.classList.toggle('slider__dot--active', i === current));
-    restart();
+function setPosition(animate) {
+    track.style.transition = animate ? '' : 'none';
+    track.style.transform = `translateX(-${position * 100}%)`;
 }
+
+function updateDots() {
+    const active = (position - 1 + total) % total;
+    dots.forEach((dot, i) => dot.classList.toggle('slider__dot--active', i === active));
+}
+
+function moveTo(newPosition) {
+    if (isMoving) return;
+    isMoving = true;
+    position = newPosition;
+    setPosition(true);
+    updateDots();
+    restart();
+    setTimeout(finishMove, 600);
+}
+
+function finishMove() {
+    if (!isMoving) return;
+    if (position === 0) position = total;
+    if (position === total + 1) position = 1;
+    setPosition(false);
+    isMoving = false;
+}
+
+track.addEventListener('transitionend', finishMove);
 
 function restart() {
     clearInterval(timer);
-    timer = setInterval(() => goTo(current + 1), 5000);
+    timer = setInterval(() => moveTo(position + 1), 5000);
 }
 
-slider.querySelector('.slider__btn--prev').addEventListener('click', () => goTo(current - 1));
-slider.querySelector('.slider__btn--next').addEventListener('click', () => goTo(current + 1));
+slider.querySelector('.slider__btn--prev').addEventListener('click', () => moveTo(position - 1));
+slider.querySelector('.slider__btn--next').addEventListener('click', () => moveTo(position + 1));
 
-goTo(0);
+setPosition(false);
+updateDots();
+restart();
