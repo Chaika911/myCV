@@ -377,6 +377,9 @@ body.white .btn-color {
 }
 
 /* skills */
+.skills-group + .skills-group {
+	margin-top: 50px;
+}
 .skills-title {
 	font-family: 'Nexa Bold';
 	font-size: 18px;
@@ -391,7 +394,6 @@ body.white .btn-color {
 	background: linear-gradient(90deg, #E65C00 0%, #F9D423 100%);
 	-webkit-background-clip: text;
 	background-clip: text;
-	margin-top: 50px;
 }
 
 .skills-item {
@@ -661,4 +663,129 @@ body.white .btn-color {
 .course__period {
 	font-weight: 500;
 	margin-bottom: 15px;
+}
+
+/* small laptop */
+@media (min-width: 861px) and (max-width: 1100px) {
+	.about {
+		gap: 30px;
+	}
+	.circle {
+		width: 24px;
+		height: 24px;
+	}
+	.circle--active::after {
+		width: 12px;
+		height: 12px;
+	}
+}
+
+/* tablet */
+@media (max-width: 860px) {
+	.about {
+		gap: 50px;
+	}
+	.btns {
+		justify-content: center;
+		gap: 60px;
+	}
+}
+@media (min-width: 600px) and (max-width: 860px) {
+	.skills-groups {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+	}
+	.skills-group + .skills-group {
+		margin-top: 0;
+	}
+	.skills-item {
+		margin-bottom: 20px;
+	}
+	.circle {
+		width: 26px;
+		height: 26px;
+	}
+	.circle--active::after {
+		width: 13px;
+		height: 13px;
+	}
+}
+
+/* mobile */
+@media (max-width: 480px) {
+	.header {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-radius: 0;
+	}
+	.about {
+		padding-top: 35px;
+		border-radius: 0;
+	}
+	.prof {
+		font-size: 21px;
+	}
+	.from {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	.section-title,
+	.skills-title {
+		text-align: center;
+	}
+	.section-title {
+		font-size: 18px;
+	}
+	.about__description {
+		padding: 16px;
+		font-size: 15px;
+	}
+	.btns {
+		gap: 30px;
+		margin: 35px 0;
+	}
+	.btn-bg {
+		width: 96px;
+		height: 96px;
+	}
+	.btn-color {
+		width: 86px;
+		height: 86px;
+	}
+	.circle {
+		width: 24px;
+		height: 24px;
+	}
+	.circle--active::after {
+		width: 12px;
+		height: 12px;
+	}
+	.job {
+		padding: 20px 18px;
+	}
+	.job__title {
+		font-size: 17px;
+	}
+	.job__list li {
+		font-size: 15px;
+	}
+	.tech-item {
+		padding: 20px 15px;
+		gap: 15px;
+	}
+	.tech-description {
+		flex-basis: auto;
+	}
+	.tech-text {
+		font-size: 15px;
+	}
+	.slider {
+		border-radius: 20px;
+	}
+	.slider__btn {
+		width: 34px;
+		height: 34px;
+		font-size: 24px;
+	}
 }
