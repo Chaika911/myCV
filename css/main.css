@@ -206,6 +206,7 @@ b {
 	font-weight: 500;
 	padding: 10px 20px 10px 45px;
 	border-radius: 10px;
+	background-image: var(--icon);
 	background-repeat: no-repeat;
 	background-position: 15px center;
 	background-size: 20px 20px;
@@ -224,19 +225,19 @@ b {
 				0 2px 5px rgba(0, 0, 0, .25) inset;
 }
 .tel {
-	background-image: url(../img/svg/telephone-call.png);
+	--icon: url(../img/svg/telephone-call.png);
 }
 .email {
-	background-image: url(../img/svg/email.png);
+	--icon: url(../img/svg/email.png);
 }
 .telegram {
-	background-image: url(../img/svg/telegram.png);
+	--icon: url(../img/svg/telegram.png);
 }
 .linkedin {
-	background-image: url(../img/svg/linkedin.png);
+	--icon: url(../img/svg/linkedin.png);
 }
 .github {
-	background-image: url(../img/svg/github.svg);
+	--icon: url(../img/svg/github.svg);
 }
 
 .contacts,
@@ -300,6 +301,30 @@ b {
 		line-height: 1;
 		cursor: pointer;
 	}
+}
+
+/* blue buttons in white theme */
+body.white .link-btn,
+body.white .social__link {
+	color: #fff;
+	background-color: transparent;
+	box-shadow: 0 3px 10px rgba(0, 94, 163, .3);
+}
+body.white .link-btn {
+	background-image: linear-gradient(320.66deg, #005EA3 14.75%, #11A8FD 84.81%);
+}
+body.white .social__link {
+	background-image: var(--icon),
+					  radial-gradient(circle at 25px 50%, #fff 13px, transparent 14px),
+					  linear-gradient(320.66deg, #005EA3 14.75%, #11A8FD 84.81%);
+	background-position: 15px center, 0 0, 0 0;
+	background-size: 20px 20px, auto, auto;
+}
+body.white .link-btn:hover,
+body.white .social__link:hover {
+	color: #fff;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 18px rgba(17, 168, 253, .5);
 }
 
 /* main */
